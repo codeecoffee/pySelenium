@@ -71,11 +71,12 @@ def test_registration():
     """Main test function for user registration"""
     
     # Configuration
-    BASE_URL = "http://127.0.0.1:8000"  # Update with your Django server URL
-    STUDENT_ID = "001234567"  # Replace with your actual WGU Student ID
+    BASE_URL = "http://127.0.0.1:8000"  
+    STUDENT_ID = "011821146"  
     
     # Test data
-    test_username = f"testuser_{int(time.time())}"
+    # test_username = f"testuser_{int(time.time())}"
+    test_username= "test_meu_cu"
     test_email = f"testuser_{int(time.time())}@example.com"
     test_password = "SecurePass123!"
     
@@ -156,6 +157,7 @@ def test_registration():
         
         # Close browser
         time.sleep(5)
+        input("\n[PAUSE] Pres Enter to close th browsr and complete the test")
         driver.quit()
 
 

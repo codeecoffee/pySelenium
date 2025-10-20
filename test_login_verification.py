@@ -86,14 +86,13 @@ def test_login_verification():
     """Main test function for login verification"""
     
     # Configuration
-    BASE_URL = "http://127.0.0.1:8000"  # Update with your Django server URL
+    BASE_URL = "http://127.0.0.1:8000"  
     LOGIN_URL = f"{BASE_URL}/login/"
-    STUDENT_ID = "001234567"  # Replace with your actual WGU Student ID
+    STUDENT_ID = "011821146"  
     
-    # Test credentials - use the same credentials from registration test
-    # Or create a user first using Django admin/shell
-    test_username = "testuser123"  # Update with actual username
-    test_password = "SecurePass123!"  # Update with actual password
+
+    test_username = "test_meu_cu"  
+    test_password = "SecurePass123!"  
     
     print("=" * 60)
     print("SELENIUM LOGIN VERIFICATION TEST SCRIPT")
@@ -192,6 +191,7 @@ def test_login_verification():
         
         # Close browser
         time.sleep(5)
+        input("\n[PAUSE] Pres Enter to close th browsr and complete the test")
         driver.quit()
 
 
